@@ -33,8 +33,7 @@ docker run -it \
            --env=DISPLAY \
            --add-host=$HOSTNAME:127.0.0.1 \
            -v $HOME/.Xauthority:/root/.Xauthority:rw \
-           -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
-           -v $HOME/intellij-settings:/root/.IntelliJIdea2018.2:rw \
+           -v $HOME/intellij-settings:/root/.IdeaIC2018.2:rw \
            -v $HOME/projects:/root/IdeaProjects:rw \
            -v $HOME/gradle-cache:/root/.gradle:rw \
            --name intellij rozidan/intellij
