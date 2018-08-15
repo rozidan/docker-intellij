@@ -1,4 +1,4 @@
-# IntelliJ inside Docker
+## IntelliJ inside Docker
 
 Run IntelliJ Idea Community 2018.2 inside a Docker container.
 OpenJDK 8 and OpenJDK 10 installed.
@@ -21,7 +21,6 @@ yum install xorg-x11-xauth
 apt-get install xauth
 ```
 
-
 2. Follow the link [System Watcher](https://blog.jetbrains.com/idea/2010/04/native-file-system-watcher-for-linux/) in order to override the default limit of  inotify max user watches
 
 
@@ -30,7 +29,7 @@ apt-get install xauth
 By running the following command you'll be able to start the container
 
 ```bash
-docker run -it \
+docker run -d \
            --net=host \
            --env=DISPLAY \
            --add-host=$HOSTNAME:127.0.0.1 \
@@ -46,12 +45,11 @@ You can change this command accordingly by which location you wish to store Inte
 
 ### About DPI Settings
 
+##### Windows
 In case of blurry fonts using MobaXterm, it is because of high DPI configuration within your OS.
-To avoid that, you should right-click the MobaXterm shortcut,
-go to properties -> compatibility -> 
-change high DPI settings and check the "override high DPI scaling behavior".
+To avoid that, you should right-click the MobaXterm shortcut, go to properties -> compatibility -> change high DPI settings and check the "override high DPI scaling behavior".
 
 ## License
 
-This project is licensed under the Apache License, Version 2.0 - 
-see the [LICENSE](http://www.apache.org/licenses/LICENSE-2.0.txt) file for details.
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE](http://www.apache.org/licenses/LICENSE-2.0.txt) file for details.
+
