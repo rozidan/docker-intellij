@@ -1,7 +1,6 @@
 ## IntelliJ inside Docker
 
-Run IntelliJ Idea Community 2018.2 inside a Docker container.
-OpenJDK 8 and OpenJDK 10 installed.
+Run IntelliJ Idea Community 2018.2 inside a Docker container, together with OpenJDK 8.
 
 ## Getting Started
 
